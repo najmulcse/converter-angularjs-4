@@ -1,0 +1,34 @@
+<!-- <h2>Hello world!</h2>
+ --><!--   
+<app-my-app-spa></app-my-app-spa> 
+<app-spa-service></app-spa-service> -->
+<form class="container horizontal" [formGroup]  = "form"  >
+
+	<div id="login-box">
+		<div class="logo">
+			
+			<h1 class="logo-caption"><span class="tweak">C</span>onverter</h1>
+		</div><!-- /.logo -->
+		<h3 class="labelStyle" style="text-align: center;">Type any number to convert</h3>
+		<div class="controls">
+			<label class="labelStyle">Decimal:</label>
+			<input type="text" name="decimal" formControlName="decimal" (ngModelChange)= "decimalChanged(oldvalue, newvalue= $event) " placeholder="Decimal" class="form-control" /> 
+			<label class="labelStyle">Binary:</label>
+			<input type="text" name="binary" (ngModelChange)= "binaryChanged(oldvalue, newvalue= $event) " formControlName="binary" placeholder="Binary" class="form-control" />
+			
+			<label class="labelStyle">Octal:</label>
+			<input type="text" name="octal" (ngModelChange)= "octalChanged(oldvalue, newvalue= $event) " formControlName="octal" placeholder="Octal" class="form-control" /> 
+			<label class="labelStyle">Hexa:</label>
+			<input type="text" name="hexa" (ngModelChange)= "hexaChanged(oldvalue, newvalue= $event) " formControlName="hexa" placeholder="Hexa" class="form-control" />
+			
+		</div><!-- /.controls -->
+	</div><!-- /#login-box -->
+</form><!-- /.container -->
+<!-- <div id="particles-js"></div> -->
+
+
+<!-- 
+<a routerLink="/myappspa"> My AppSpa</a>
+<a routerLink="/spaservice">Spa Service</a>
+
+<router-outlet></router-outlet> -->

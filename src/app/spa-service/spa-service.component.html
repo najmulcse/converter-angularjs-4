@@ -1,0 +1,26 @@
+<h2>Services are | {{day |date}}</h2>
+<h3>{{day| date:'shortDate' }}</h3>
+<h3>{{day| date:'fullDate'| uppercase}}</h3>
+<div>
+
+	<input type="text" name="" [(ngModel)]= "newService" placeholder="Enter new service">
+	<button (click) = "addService()">Add</button>
+</div>
+
+<ul>
+	<li *ngFor="let service of defaultServices ; let ind= index ">{{service}}
+	   <span (click) = "removeService(ind)">X</span>
+	</li>
+</ul>
+<!-- <p>
+  spa-service works! <span *ngIf = "isTrue; then md_id else default">{{services.name}}</span>
+</p>
+
+<div>
+<ng-template #md_id> {{services.id}}
+
+	<input type="text" name="" [(ng-model)= "newService"]>
+	<button >Add</button>
+</ng-template>
+</div>
+<ng-template #default> default</ng-template> -->
